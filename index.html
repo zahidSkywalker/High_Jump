@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Jump - Reach New Heights in Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <style>
+                        .logo-path { fill: #008080; animation: logo-bounce 2s ease-in-out infinite; }
+                        @keyframes logo-bounce {
+                            0%, 100% { transform: translateY(0); }
+                            50% { transform: translateY(-5px); }
+                        }
+                    </style>
+                    <path class="logo-path" d="M20 90 L20 10 L45 10 L45 90 Z M55 10 L55 60 L80 90 L80 10 Z" />
+                </svg>
+                <span>High Jump</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#kids">Kids</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for shoes...">
+                    <button type="submit"><i>&#128269;</i></button>
+                </div>
+                <button class="cart-btn" id="cart-btn">
+                    <i>&#128722;</i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Reach New Heights in Style</h1>
+                <p>Discover the latest collection of premium footwear in Bangladesh.</p>
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="products" class="product-showcase">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="men">Men</button>
+                    <button class="filter-btn" data-filter="women">Women</button>
+                    <button class="filter-btn" data-filter="sneakers">Sneakers</button>
+                </div>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-category="men sneakers">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/shoe1/300/300.jpg" alt="Urban Runner Sneakers">
+                            <span class="sale-tag">-20%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Urban Runner Sneakers</h3>
+                            <p class="price"><span class="original-price">৳4,500</span> ৳3,600</p>
+                            <button class="add-to-cart-btn" data-name="Urban Runner Sneakers" data-price="3600">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card" data-category="women sandals">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/shoe2/300/300.jpg" alt="Summer Breeze Sandals">
+                        </div>
+                        <div class="product-info">
+                            <h3>Summer Breeze Sandals</h3>
+                            <p class="price">৳2,100</p>
+                            <button class="add-to-cart-btn" data-name="Summer Breeze Sandals" data-price="2100">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card" data-category="men formal">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/shoe3/300/300.jpg" alt="Classic Oxford Loafers">
+                        </div>
+                        <div class="product-info">
+                            <h3>Classic Oxford Loafers</h3>
+                            <p class="price">৳5,500</p>
+                            <button class="add-to-cart-btn" data-name="Classic Oxford Loafers" data-price="5500">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card" data-category="women sneakers">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/shoe4/300/300.jpg" alt="AeroWalk Women's Sneakers">
+                            <span class="new-tag">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>AeroWalk Women's Sneakers</h3>
+                            <p class="price">৳3,200</p>
+                            <button class="add-to-cart-btn" data-name="AeroWalk Women's Sneakers" data-price="3200">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>High Jump</h3>
+                    <p>Your trusted destination for quality footwear in Bangladesh.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" id="contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@highjump.com.bd</p>
+                    <p>Phone: +880 1234-567890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 High Jump. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-cart-btn">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: ৳<span id="cart-total-price">0</span></h3>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-checkout-btn">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group payment-options">
+                    <label>Payment Method</label>
+                    <div>
+                        <input type="radio" id="bkash" name="payment" value="bkash" checked>
+                        <label for="bkash">Bkash</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cod" name="payment" value="cod">
+                        <label for="cod">Cash on Delivery (COD)</label>
+                    </div>
+                </div>
+                <button type="submit" class="place-order-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
